@@ -11,7 +11,7 @@ import {
 ;(config as InlineConfig).configFile = false //不会根据vite.config.js配置进行打包
 const buildAll = async () => {
   // 全量打包
-  await build(defineConfig(config as UserConfig) as InlineConfig) // await build(defineConfig({}))
+  await build(defineConfig(config as UserConfig) as InlineConfig)
   const srcDir = path.resolve(__dirname, '../src/')
   fs.readdirSync(srcDir)
     .filter((name) => {
