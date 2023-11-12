@@ -1,0 +1,14 @@
+{
+  "name": "@emui/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./script/build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

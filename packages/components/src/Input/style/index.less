@@ -1,0 +1,54 @@
+@import '../../../style/common/color.less';
+@import '../../../style/common/font.less';
+.input {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  margin: 6px;
+}
+.emui-input {
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid @primary-color;
+  font-size: 14px;
+  font-family: 'jiangxizhuokai';
+  padding: 7px 10px;
+  width: 100%;
+
+  &:active,
+  &:focus {
+    border-color: @primary-active-color;
+    box-shadow: 0 0 4px @primary-active-color;
+  }
+
+  &__size-large {
+    height: 40px;
+    line-height: 40px;
+  }
+  &__size-small {
+    height: 25px;
+    line-height: 25px;
+  }
+  &__size-default {
+    height: 32px;
+    line-height: 32px;
+  }
+  &__disabled-true {
+    background-color: #f5f7fa;
+    cursor: no-drop;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  cursor: pointer;
+}
+.close {
+  &:hover {
+    color: red;
+  }
+}

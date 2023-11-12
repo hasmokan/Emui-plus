@@ -1,0 +1,51 @@
+@import '../../../style/common/color.less';
+@import '../../../style/common/font.less';
+.emui-nav-item {
+  position: relative;
+  padding: 10px 20px;
+  color: @font-gold-color;
+  font-family: 'jiangxizhuokai';
+  box-sizing: border-box;
+  transition: 0.2s;
+  &:hover {
+    background: #38767b;
+  }
+  &.selected {
+    background: #38767b;
+    color: #8d5940;
+    box-sizing: border-box;
+  }
+  &.vertical {
+    &.selected {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        border-left: 4px solid @font-gold-color;
+      }
+      &:hover {
+        border-left: none;
+      }
+    }
+    &:hover {
+      border-left: 4px solid @font-gold-color;
+    }
+  }
+  &.not-vertical {
+    &.selected {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 4px solid @font-gold-color;
+      }
+    }
+  }
+  &.sub {
+    color: black;
+  }
+}

@@ -1,0 +1,44 @@
+@radius: 4px;
+@normalHeight: 34px;
+
+.messages {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e9eff8;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ebeef5;
+  border-radius: 5px;
+  z-index: 9999;
+  transform: translateZ(9999px);
+  transition: top 0.4s ease;
+  padding: 10px 20px;
+  .message-container {
+    .message-content {
+      .message-icon {
+        display: inline-block;
+        margin-right: 5px;
+      }
+      .option {
+        display: inline-block;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}

@@ -1,0 +1,25 @@
+@import '../../../style/common/color.less';
+@import '../../../style/common/font.less';
+.checkbox {
+  padding: 5px;
+  display: inline-block;
+  font-family: 'jiangxizhuokai';
+  .emui-checkbox-primary {
+    display: flex;
+    align-items: center;
+    .emui-checkbox {
+      width: 20px;
+      height: 20px;
+      &__disabled--true {
+        cursor: not-allowed;
+      }
+    }
+    .emui-checkbox-label {
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+    .label-disabled {
+      color: #ccc;
+    }
+  }
+}

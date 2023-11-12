@@ -1,0 +1,22 @@
+@import '../../../style/common/color.less';
+@import '../../../style/common/font.less';
+.form-item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-family: 'jiangxizhuokai';
+  .form-item-label {
+    margin-right: 30px;
+  }
+  .label-required {
+    &::before {
+      content: '*';
+      color: red;
+    }
+  }
+  .message {
+    font-size: 12px;
+    color: red;
+    margin-left: 5px;
+  }
+}

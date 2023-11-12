@@ -1,0 +1,30 @@
+@import '../../../style/common/color.less';
+.emui-tag-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .add-tag {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #d9ecff;
+    font-size: 12px;
+    &:hover {
+      cursor: pointer;
+      background-color: #c5eaed;
+      color: #8cc1f6;
+    }
+  }
+  .add-input {
+    width: 100px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid @primary-color;
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+}

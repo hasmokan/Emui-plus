@@ -1,0 +1,5 @@
+node_modules
+packages/emui
+play/node_modules
+site/node_modules
+server/node_modules

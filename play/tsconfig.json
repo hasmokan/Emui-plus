@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {
+    "types": ["../packages/components//src/components.d.ts"]
+  }
+}

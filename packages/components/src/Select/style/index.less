@@ -1,0 +1,58 @@
+@import '../../../style/common/color.less';
+@import '../../../style/common/font.less';
+
+.select {
+  font-family: 'jiangxizhuokai';
+  display: inline-block;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 10px;
+    border: 2px solid @primary-color;
+    border-radius: 5px;
+    span {
+      /* 一行显示，超长省略号 */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .placeholder {
+      color: #ccc;
+    }
+    .iconfont {
+      transition: transform 0.3s;
+    }
+    .rotateIcon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .options {
+    margin-top: 5px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    transition: height 0.3s;
+    .arrow {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 8px solid transparent;
+        border-bottom-color: @background-color;
+        bottom: 0;
+        left: 27px;
+        z-index: inherit;
+      }
+    }
+    .select-option {
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+}
