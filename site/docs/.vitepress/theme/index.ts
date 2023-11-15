@@ -1,5 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import emui from "@emui/components/index";
+// import emui from "../../../../packages/emui/emui";
+// import "../../../../packages/emui/style.css";
 import "./style/var.css"
 export default {
   ...DefaultTheme,

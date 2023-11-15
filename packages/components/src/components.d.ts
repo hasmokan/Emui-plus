@@ -5,7 +5,6 @@ declare module '@vue/runtime-core' {
     EmuiIcon: typeof components.Icon
     EmuiFormItem: typeof components.EmuiFormItem
   }
-  type formItem = typeof components.EmuiFormItem
 }
 
 export { formItem }

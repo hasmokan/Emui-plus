@@ -1,8 +1,8 @@
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 
-// import { defineConfig } from 'vite'
-export default {
+import { defineConfig } from 'vite'
+export default defineConfig({
   build: {
     //打包后文件目录
     outDir: '../emui',
@@ -27,4 +27,4 @@ export default {
     }
   },
   plugins: [vue(), visualizer()]
-}
+})

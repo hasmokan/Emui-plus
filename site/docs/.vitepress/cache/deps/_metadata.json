@@ -1,17 +1,11 @@
 {
-  "hash": "a50cdda5",
-  "browserHash": "1619b775",
+  "hash": "1d534460",
+  "browserHash": "bf72ccd6",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.2.36/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "43701cce",
-      "needsInterop": false
-    },
-    "async-validator": {
-      "src": "../../../../../node_modules/.pnpm/async-validator@4.2.5/node_modules/async-validator/dist-web/index.js",
-      "file": "async-validator.js",
-      "fileHash": "9244c42e",
+      "fileHash": "fff6e35a",
       "needsInterop": false
     }
   },
